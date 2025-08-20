@@ -63,7 +63,14 @@ group :test do
   gem "capybara"
   gem "selenium-webdriver"
 
+  # Payment Gateway
   gem 'stripe'
-  # Gemfile
+
   gem 'dotenv-rails', groups: [:development, :test]
+
+  # LLM for AI
+  gem 'ruby_llm', '>= 1.3.0'
+
+  gem 'sendgrid-ruby'
+  gem 'letter_opener'
 end

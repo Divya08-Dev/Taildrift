@@ -22,6 +22,10 @@
         </button>
       <% end %>
     </div>
+
+    <div class="d-flex gap-2">
+      <%= button_to "Send Welcome Email", send_welcome_email_path(current_user), method: :post, class: "btn btn-primary" %>
+    </div>
   </nav>
 </div>
 
