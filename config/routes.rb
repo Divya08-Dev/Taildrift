@@ -9,4 +9,5 @@ Rails.application.routes.draw do
   post '/webhooks/stripe', to: 'stripe_webhooks#webhook'
   get '/invoices/:session_id', to: 'invoices#show', as: :download_invoice
   post '/stripe_webhooks/cancel', to: 'stripe_webhooks#cancel'
+  post 'send_welcome/:id', to: 'emails#send_welcome', as: :send_welcome_email
 end
